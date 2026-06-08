@@ -7,7 +7,7 @@ set -e
 
 if [[ -z $1 ]]
 then
-	echo Error: no file arg
+	echo Error: no file name arg on command line
 	exit 1
 fi
 
