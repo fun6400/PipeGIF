@@ -1,0 +1,6 @@
+
+*.o
+linux/animation
+linux/array
+linux/inlinestruct
+linux/stdin2stdout
