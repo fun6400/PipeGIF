@@ -1,3 +1,8 @@
+/*
+ * VirtualDisplay.h
+ * by Hans Schou <hans@schou.dk> © 2026
+ * SPDX-License-Identifier: MIT
+ */
 
 #ifndef _VIRTUALDISPLAY_H
 #define _VIRTUALDISPLAY_H

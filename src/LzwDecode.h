@@ -1,4 +1,8 @@
 /*
+ * LzwDecode.h
+ * by Hans Schou <hans@schou.dk> © 2026
+ * SPDX-License-Identifier: MIT
+ *
  * At least 17KB SRAM is required for LzwDecode.
  */
 

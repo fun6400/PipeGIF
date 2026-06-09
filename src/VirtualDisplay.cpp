@@ -1,6 +1,8 @@
 /*
-vim: ts=4 expandtab :
-*/
+ * VirtualDisplay.cpp
+ * by Hans Schou <hans@schou.dk> © 2026
+ * SPDX-License-Identifier: MIT
+ */
 
 //#include <stdint.h>
 #include "VirtualDisplay.h"
