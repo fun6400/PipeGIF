@@ -15,3 +15,13 @@ Features:
 * Transparant
 * Buffer: only GIF header and color table
 * Any display
+
+Requirements:
+* About 20 KB RAM for GIF structs and LZW stacks
+
+[SimpleTtyGif.ino](examples/SimpleTtyGif/SimpleTtyGif.ino)
+is a simple example which just require Serial.print()
+to demonstrate the GIF decoder producing ASCII art.
+A `const` image are decoded to the serial console.
+
+
