@@ -3,7 +3,8 @@
  * by Hans Schou <hans@schou.dk> © 2026
  * SPDX-License-Identifier: MIT
  *
- * Test run from command line: clear ; ./inlinestruct ; sleep 2
+ * Test run from command line:
+ *   clear ; ./inlinestruct ; sleep 2
  */
 
 #include <stdlib.h> // EXIT_SUCCESS

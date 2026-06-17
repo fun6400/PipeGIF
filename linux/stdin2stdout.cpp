@@ -1,7 +1,16 @@
+/*
+ * stdin2stdout.cpp
+ * by Hans Schou <hans@schou.dk> © 2026
+ * SPDX-License-Identifier: MIT
+ *
+ * Scale the virtual terminal to double with of the
+ * image being tested and same height.
+ *
+ * ./stdin2stdout < ../test_images/sample_1.gif
+ */
 
 #include <stdio.h> // printf()
 #include <stdlib.h> // EXIT_SUCCESS
-//#include <sys/select.h> // select()
 #include <unistd.h>
 
 #include "../src/PipeGIF.h" // Will include VirtualDisplay & LZWdecod
@@ -23,14 +32,14 @@ int main(int argc, char *argv[]) {
            case GIF_OK:
                // All OK
                break;
+           case GIF_DELAY100:
+	       fflush(stdout);
+               usleep( 10000*gif.getDelay100() );
+               break;
            case GIF_TRAILER:
                // End of image. Try pipe several images:
 	       fflush(stdout);
 	       usleep( 500000 ); // cat *.gif | ./stdin2stdout
-               break;
-           case GIF_DELAY100:
-	       fflush(stdout);
-               usleep( 10000*gif.getDelay100() );
                break;
            default:
 	       fprintf(stderr,"\e[0m\nError GIF pasing character '0x%02x'\n", ch);
