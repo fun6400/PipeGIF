@@ -4,3 +4,5 @@ linux/animation
 linux/array
 linux/inlinestruct
 linux/stdin2stdout
+linux/gifstruct
+img/IMG_*.JPG
