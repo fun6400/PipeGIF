@@ -33,12 +33,12 @@ U8g2 library OLED demo with ESP32-C.
 
 - GIF87a and GIF89a
 - Animated GIF (multiple frames)
+- Animated delay in you main program (think `BlinkWithoutDelay.ino`)
 - Interlaced images
 - Transparent color
 - Any data source (const, file, SD card, network, …)
 - Any display (OLED, TFT, serial terminal, framebuffer, …)
 - Only ~20 KB RAM needed (GIF header + LZW tables)
-- Little-endian MCU or CPU required
 
 ## Requirements
 
